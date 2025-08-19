@@ -1,0 +1,123 @@
+/* ===================== */
+/* 🎨 Estilos generales  */
+/* ===================== */
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* ===================== */
+/* 🔘 Botones de opciones */
+/* ===================== */
+.options-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.btn-option {
+  padding: 12px 20px;
+  background-color: #4a90e2;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-option:hover {
+  background-color: #357abd;
+  transform: scale(1.05);
+}
+
+.selected {
+  background-color: #2c5f9e !important;
+}
+
+/* ===================== */
+/* 📋 Formulario          */
+/* ===================== */
+.formulario {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* ===================== */
+/* 📌 Botón enviar        */
+/* ===================== */
+.formulario button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #4a90e2;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario button[type="submit"]:hover {
+  background-color: #357abd;
+}
+
+/* ===================== */
+/* 📱 Responsivo          */
+/* ===================== */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+  .options-container {
+    gap: 10px;
+  }
+  .btn-option {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
